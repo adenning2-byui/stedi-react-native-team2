@@ -7,6 +7,8 @@ export default function Login(props){
             <Text>This is the Login Screen</Text>
             <Button title="Log In" onPress={()=>{Alert.alert("Hello from Adam!");}}></Button>
             <Button title="Log In #2" onPress={()=>{Alert.alert("Hello from Nathan!");}}></Button>
+            <Button title="Log In #3" onPress={()=>{Alert.alert("Hello from Brodie!");}}></Button>
+
         </View>
 
     );
