@@ -4,29 +4,29 @@ import {StyleSheet, View, Text, Button, Alert} from 'react-native';
 export default function Login(props){
     return(
         <View style={styles.login}>
-            <Text>This is the Login Screen</Text>
+            <View>
             <Button title="Log In" onPress={()=>{Alert.alert("Hello from Adam!");}}></Button>
+            </View><View>
             <Button title="Log In #2" onPress={()=>{Alert.alert("Hello from Nathan!");}}></Button>
+            </View><View>
             <Button title="Log In #3" onPress={()=>{Alert.alert("Hello from Brodie!");}}></Button>
+            </View><View>
             <Button title="Log In #3" onPress={()=>{Alert.prompt("Hello Ryan, please enter your password.");}}></Button>
+            </View><View>
             <Button title="Log In #5" onPress={()=>{Alert.alert("Hello from Eymi!");}}></Button>
-
+            </View>
         </View>
-
     );
 }
 
 const styles = StyleSheet.create({
     login: {
-        flexDirection: 'row',
+        flexDirection: 'column',
         width: '100%',
         justifyContent: 'space-between',
-        backgroundColor: 'green',
-        height: '12%',
-        alignItems: 'flex-end',
-        paddingBottom: 5,
-        paddingLeft: 10,
-        paddingRight: 10,
-        
+        backgroundColor: 'pink',
+        height: '100%',
+        paddingTop: 100,
+        paddingBottom: 100,
       },
 })
